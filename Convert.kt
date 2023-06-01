@@ -1,7 +1,17 @@
 fun main() {
+    val convkmtomiles=0.62
+    val convmilestokm=1.61
+    val convcmtoin= 0.39
+    val convintocm=2.54
+    val convkgtolb=2.2
+    val convlbtokg=0.45
+    val convgtooz=0.04
+    val convoztog=28.35
+    val convltocup=4.17
+    val convcuptol=0.24
     print("Enter a numeric value: ")
     val userInput: String? = readLine() //Retireves the user numeric value
-    val value: Int? = userInput?.toInt() //Converts the user input from string to Int and stores in value 
+    val value: Double? = userInput?.toDouble() //Converts the user input from string to Int and stores in value 
 
     print("Enter the current unit of measurement: ") // Retrieves the current unit of measurement
     val unit: String? = readLine() //Stores the string from the user in the variable unit
@@ -13,88 +23,75 @@ fun main() {
     when (unit) {
         "km" -> {
             if (value != null) {
-                println("The conversion to miles is ${value * 0.62}")
+                println("The conversion to miles is ${value * convkmtomiles}")
             } else {
                 println("Invalid value")
             }
         }
         "mi" -> {
             if (value != null) {
-                println("The conversion to kilometers is ${value * 1.61}")
+                println("The conversion to kilometers is ${value * convmilestokm}")
             } else {
                 println("Invalid value")
             }
         }
         "cm" -> {
             if (value != null) {
-                println("The conversion to inches is ${value * 0.39}")
+                println("The conversion to inches is ${value * convcmtoin}")
             } else {
                 println("Invalid value")
             }
         }
         "in" -> {
             if (value != null) {
-                println("The conversion to centimeters is ${value * 2.54}")
+                println("The conversion to centimeters is ${value * convintocm}")
             } else {
                 println("Invalid value")
             }
         }
         "kg" -> {
             if (value != null) {
-                println("The conversion to pounds is ${value * 2.2}")
+                println("The conversion to pounds is ${value * convkgtolb}")
             } else {
                 println("Invalid value")
             }
         }
         "lb" -> {
             if (value != null) {
-                println("The conversion to kilos is ${value * 0.45}")
+                println("The conversion to kilos is ${value * convlbtokg}")
             } else {
                 println("Invalid value")
             }
         }
         "g" -> {
             if (value != null) {
-                println("The conversion to ounces is ${value * 0.04}")
+                println("The conversion to ounces is ${value * convgtooz}")
             } else {
                 println("Invalid value")
             }
         }
         "oz" -> {
             if (value != null) {
-                println("The conversion to grams is ${value * 28.35}")
+                println("The conversion to grams is ${value * convoztog}")
             } else {
                 println("Invalid value")
             }
         }
         "l" -> {
             if (value != null) {
-                println("The conversion to cups ${value * 4.17}")
+                println("The conversion to cups ${value * convltocup}")
             } else {
                 println("Invalid value")
             }
         }
         "cup" -> {
             if (value != null) {
-                println("The conversion to liters ${value * 0.24}")
+                println("The conversion to liters ${value * convcuptol}")
             } else {
                 println("Invalid value")
             }
         }
-        "C" -> {
-            if (value != null) {
-                println("The conversion to farenheit ${(value * 9/5)+32}")
-            } else {
-                println("Invalid value")
-            }
-        }
-        "F" -> {
-            if (value != null) {
-                println("The conversion to celsius ${(value -32)*5/9}")
-            } else {
-                println("Invalid value")
-            }
-        }
+       
         else -> {
             println("Invalid unit of measurement")
         }
