@@ -1,0 +1,43 @@
+# Kotlin specific
+*.class
+*.jar
+*.war
+*.ear
+.idea/
+.gradle/
+build/
+out/
+
+# Gradle specific
+/.gradle
+/build/
+/captures/
+
+# IntelliJ IDEA specific
+*.iml
+/.idea/
+/.idea_modules/
+/*.ipr
+/*.iws
+/*.ids
+
+# Compiled Kotlin
+/classes/
+/kotlin-build/
+
+# Dependencies
+/.jvm/
+/.jvmversions
+/.jvmrc
+/jvm.lock
+
+# Gradle Wrapper
+/gradle/
+!/gradle/wrapper/
+/gradlew
+/gradlew.bat
+
+# Miscellaneous
+/caches/
+/out/
+/repo/
