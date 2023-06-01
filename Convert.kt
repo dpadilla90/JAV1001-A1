@@ -1,4 +1,5 @@
 fun main() {
+    //Creating variables to store conversion values
     val convkmtomiles=0.62
     val convmilestokm=1.61
     val convcmtoin= 0.39
