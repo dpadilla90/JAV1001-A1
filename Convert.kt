@@ -1,11 +1,15 @@
 fun main() {
     print("Enter a numeric value: ")
-    val userInput: String? = readLine()
-    val value: Int? = userInput?.toInt()
+    val userInput: String? = readLine() //Retireves the user numeric value
+    val value: Int? = userInput?.toInt() //Converts the user input from string to Int and stores in value 
 
-    print("Enter the current unit of measurement: ")
-    val unit: String? = readLine()
+    print("Enter the current unit of measurement: ") // Retrieves the current unit of measurement
+    val unit: String? = readLine() //Stores the string from the user in the variable unit
 
+    //Used a when because of the many units to convert
+    //had to evalute if the value stored in value isnt null, because Int is declared as nullable Int.
+    //If the value isnt Null it proceeds to make the conversion if it is prints "Invalid value"
+    //Repeats the same in every conversion case
     when (unit) {
         "km" -> {
             if (value != null) {
